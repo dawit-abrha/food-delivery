@@ -47,11 +47,11 @@ const RestaurantDetail = () => {
     };
 
     return (
-        <div style={{ maxWidth: '800px', margin: '40px auto' }}>
+        <div style={{ maxWidth: '800px', margin: '40px auto', padding: '0 10px' }}>
             <h1>Menu</h1>
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(3, 1fr)',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
                 gap: '20px',
             }}>
                 {menuItems.map((item) => (

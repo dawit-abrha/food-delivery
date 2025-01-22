@@ -1,9 +1,9 @@
-// src/components/Navbar.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 const Navbar = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
     const cartItems = useSelector((state) => state.cart.items);
 
     return (
@@ -15,6 +15,7 @@ const Navbar = () => {
                 padding: '10px 20px',
                 backgroundColor: '#007bff',
                 color: '#fff',
+                position: 'relative',
             }}
         >
             <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -22,21 +23,40 @@ const Navbar = () => {
                     src="https://gorabelu.com/wp-content/uploads/2024/03/ty.png"
                     alt="Food Delivery Logo"
                     style={{
-                        width: '150px',
-                        height: '100px',
+                        width: '50px',
+                        height: '50px',
                         borderRadius: '50%',
                         marginRight: '10px',
                     }}
                 />
                 <h1 style={{ margin: 0, fontSize: '24px' }}>AGELGIL</h1>
             </div>
+            <button
+                onClick={() => setMenuOpen(!menuOpen)}
+                style={{
+                    backgroundColor: 'transparent',
+                    border: 'none',
+                    color: '#fff',
+                    fontSize: '24px',
+                    display: 'none', // Hidden by default for larger screens
+                    cursor: 'pointer',
+                }}
+            >
+                ☰
+            </button>
             <ul
                 style={{
                     listStyle: 'none',
-                    display: 'flex',
-                    gap: '20px',
+                    display: menuOpen ? 'block' : 'flex', // Toggle between block and flex
+                    flexDirection: menuOpen ? 'column' : 'row',
+                    gap: menuOpen ? '10px' : '20px',
                     margin: 0,
-                    padding: 0,
+                    padding: menuOpen ? '10px' : '0',
+                    backgroundColor: menuOpen ? '#007bff' : 'transparent',
+                    position: menuOpen ? 'absolute' : 'static',
+                    top: menuOpen ? '60px' : 'auto',
+                    right: menuOpen ? '20px' : 'auto',
+                    zIndex: 1,
                 }}
             >
                 <li>
