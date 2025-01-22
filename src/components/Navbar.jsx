@@ -23,7 +23,7 @@ const Navbar = () => {
                     src="https://gorabelu.com/wp-content/uploads/2024/03/ty.png"
                     alt="Food Delivery Logo"
                     style={{
-                        width: '50px',
+                        width: '100%',
                         height: '50px',
                         borderRadius: '50%',
                         marginRight: '10px',
@@ -75,15 +75,16 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/cart" style={{ color: '#fff', textDecoration: 'none' }}>
-                        Cart ({cartItems.length})
-                    </Link>
-                </li>
-                <li>
                     <Link to="/orderdlist" style={{ color: '#fff', textDecoration: 'none' }}>
                         Order List
                     </Link>
                 </li>
+                <li>
+                    <Link to="/cart" style={{ color: '#fff', textDecoration: 'none' }}>
+                        Cart ({cartItems.length})
+                    </Link>
+                </li>
+
             </ul>
         </nav>
     );
