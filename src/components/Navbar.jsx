@@ -12,7 +12,7 @@ const Navbar = () => {
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
-                padding: '10px 20px',
+                padding: '10px 40px',
                 backgroundColor: '#007bff',
                 color: '#fff',
                 position: 'relative',
