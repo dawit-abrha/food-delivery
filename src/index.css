@@ -135,11 +135,14 @@ button:hover {
   color: #fff;
   padding: 30px 20px;
   text-align: center;
+  text-decoration: none;
+
 }
 
 .footer p {
   margin: 0;
   font-size: 14px;
+  text-decoration: none;
 }
 
 /* Page Layouts */
@@ -187,10 +190,12 @@ button:hover {
 
   .navbar-nav li {
     margin: 10px 0;
+
   }
 
   .footer {
     text-align: center;
+    text-decoration: none;
   }
 
   .col {
@@ -210,4 +215,77 @@ button:hover {
   .col {
     padding: 10px;
   }
+}
+
+.international-footer {
+  background-color: #222;
+  /* Dark background for global appeal */
+  color: #fff;
+  /* White text for contrast */
+  padding: 20px 0;
+  font-family: 'Arial', sans-serif;
+  /* Neutral font */
+  line-height: 1.6;
+}
+
+.international-footer h4 {
+  color: #f4a261;
+  /* Highlight color for headings */
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.international-footer a {
+  color: #e76f51;
+  /* International accent color */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.international-footer a:hover {
+  color: #2a9d8f;
+  /* Change on hover for accessibility */
+}
+
+.international-footer .social-media {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.international-footer .social-media li {
+  display: inline;
+}
+
+.international-footer .social-media a {
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+}
+
+.international-footer .social-media a:hover {
+  border-bottom: 1px solid #e76f51;
+}
+
+.international-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.international-footer ul li {
+  margin-bottom: 5px;
+}
+
+.international-footer .copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #bbb;
+  /* Muted color for secondary text */
+}
+
+.international-footer a:focus {
+  outline: 2px solid #2a9d8f;
+  /* Accessibility focus indicator */
 }
