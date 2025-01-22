@@ -30,15 +30,15 @@ const RestaurantDetail = () => {
         },
         {
             id: 5,
-            name: 'Kitfo',
+            name: 'Zahla',
             price: '€ 30',
-            image: 'https://media.cnn.com/api/v1/images/stellar/prod/190205150343-kitfo.jpg?q=w_1600,h_900,x_0,y_0,c_fill'
+            image: 'https://www.yeprecipes.com/data/media/7/atakilt-wat-recipe.jpg'
         },
         {
             id: 6,
-            name: 'Kikil',
+            name: 'Kikie',
             price: '€ 15',
-            image: 'https://static.ffx.io/images/$zoom_0.378%2C$multiply_0.7725%2C$ratio_1.5%2C$width_756%2C$x_0%2C$y_0/t_crop_custom/q_86%2Cf_auto/0b7b298261231f597f918cdac59903ecc08ccbfb'
+            image: 'https://spicecravings.com/wp-content/uploads/2018/10/Misir-Wot-1.jpg'
         },
     ];
 
