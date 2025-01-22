@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/food-delivery/static/css/main.bb900958.css",
-    "main.js": "/food-delivery/static/js/main.24ea53d2.js",
+    "main.css": "/food-delivery/static/css/main.cb441805.css",
+    "main.js": "/food-delivery/static/js/main.61fe6ff7.js",
     "index.html": "/food-delivery/index.html",
-    "main.bb900958.css.map": "/food-delivery/static/css/main.bb900958.css.map",
-    "main.24ea53d2.js.map": "/food-delivery/static/js/main.24ea53d2.js.map"
+    "main.cb441805.css.map": "/food-delivery/static/css/main.cb441805.css.map",
+    "main.61fe6ff7.js.map": "/food-delivery/static/js/main.61fe6ff7.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb900958.css",
-    "static/js/main.24ea53d2.js"
+    "static/css/main.cb441805.css",
+    "static/js/main.61fe6ff7.js"
   ]
 }
