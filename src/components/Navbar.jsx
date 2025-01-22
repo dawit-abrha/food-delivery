@@ -16,6 +16,7 @@ const Navbar = () => {
                 backgroundColor: '#007bff',
                 color: '#fff',
                 position: 'relative',
+                flexWrap: 'wrap', // Ensures items wrap for mobile view
             }}
         >
             <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -31,12 +32,13 @@ const Navbar = () => {
                 />
                 <h1 style={{ margin: 0, fontSize: '24px' }}>AGELGIL</h1>
             </div>
+
+            {/* Mobile menu toggle button */}
             <button
                 onClick={() => setMenuOpen(!menuOpen)}
                 style={{
                     backgroundColor: 'transparent',
                     border: 'none',
-                    color: '#fff',
                     fontSize: '24px',
                     display: 'none', // Hidden by default for larger screens
                     cursor: 'pointer',
@@ -44,6 +46,8 @@ const Navbar = () => {
             >
                 ☰
             </button>
+
+            {/* Navigation Links */}
             <ul
                 style={{
                     listStyle: 'none',
@@ -79,13 +83,48 @@ const Navbar = () => {
                         Order List
                     </Link>
                 </li>
+
+                {/* Cart Link */}
                 <li>
                     <Link to="/cart" style={{ color: '#fff', textDecoration: 'none' }}>
                         Cart ({cartItems.length})
                     </Link>
                 </li>
-
             </ul>
+
+            {/* Mobile-specific styling */}
+            <style>
+                {`
+                    @media (max-width: 768px) {
+                        /* Show the menu toggle button on smaller screens */
+                        button {
+                            display: block;
+                        }
+
+                        /* Adjust the navbar items for mobile screens */
+                        nav {
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+
+                        ul {
+                            flex-direction: column;
+                            width: 100%;
+                        }
+
+                        /* Optional: Add padding and make cart more visible on mobile */
+                        li {
+                            padding: 10px;
+                            text-align: left;
+                        }
+
+                        /* Styling for the cart on mobile to ensure visibility */
+                        .cart-link {
+                            font-size: 16px;
+                        }
+                    }
+                `}
+            </style>
         </nav>
     );
 };
